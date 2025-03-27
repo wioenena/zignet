@@ -12,8 +12,6 @@ pub fn main() !void {
         args = std.process.args();
     }
 
-    _ = std.io.getStdErr().writer();
-
     _ = args.next(); // skip the first argument (the program name)
     const addr_str = args.next();
     const port_str = args.next();
